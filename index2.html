@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetTopia - 個性化設計</title>
+    <style>
+        /* Set background color for the whole page */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f9f4f0; /* 全頁背景顏色 */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 保證頁面至少填滿視口高度 */
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ff6f61; /* 桃紅色背景 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 去掉 logo 链接的底线 */
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 1px;
+            text-decoration: none; /* 去掉底线 */
+        }
+
+        header nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffcccb; /* 鼠標懸停改為淺粉色 */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffcccb; /* 淺粉色背景 */
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #2e7d32; /* 綠色標題 */
+            text-transform: uppercase;
+        }
+
+        .hero h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .hero .btn {
+            padding: 18px 35px;
+            background-color: #2e7d32; /* 綠色按鈕 */
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .hero .btn:hover {
+            background-color: #1b5e20; /* 深綠色懸停效果 */
+            transform: scale(1.05);
+        }
+
+        /* Customization Section */
+        .customization-content {
+            padding: 60px 20px;
+            background-color: #ffcccb; /* 淺粉色背景 */
+            color: #333;
+            flex-grow: 1; /* 讓此區塊自動延伸以填充剩餘空間 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .customization-content h2 {
+            font-size: 2.8em;
+            color: #ff6f61; /* 桃紅色標題 */
+            margin-bottom: 40px;
+        }
+
+        .customization-cards {
+            display: flex;
+            justify-content: center; /* 讓卡片居中 */
+            gap: 20px; /* 卡片之間距離 */
+            flex-wrap: wrap; /* 讓卡片換行 */
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .customization-cards .card {
+            background-color: #ffebee; /* 淺粉色卡片背景 */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 35px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .customization-cards .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .customization-cards .card img {
+            width: 80%;
+            max-width: 250px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .customization-cards .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .customization-cards .card h3 {
+            font-size: 1.8em;
+            color: #2e7d32; /* 綠色標題 */
+            margin-bottom: 15px;
+        }
+
+        .customization-cards .card p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61; /* 桃紅色背景 */
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">PetTopia 寵物養成計劃</a>
+        <nav>
+            <a href="index3.html#about">認識我們</a> <!-- 連結到認識我們 -->
+            <a href="index.html#features">產品特色</a>
+            <a href="index2.html#customization">個性化設計</a>
+            <a href="#contact">聯絡我們</a>
+        </nav>
+    </header>
+    
+
+    <div class="customization-content">
+        <h2>選擇你喜愛的風格</h2>
+        <div class="customization-cards">
+            <div class="card">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="Character060 Rigged Dog" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="250" height="250" src="https://sketchfab.com/models/044acbc908bf49539096b607eca871cc/embed?autostart=1&ui_theme=dark&dnt=1"></iframe>
+                </div>
+                <h3>可愛風格</h3>
+                <p>為你的寵物設計一個可愛、溫馨的外觀，讓它更加吸引人。</p>
+            </div>
+            <div class="card">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="Annoying Dog" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="250" height="250" src="https://sketchfab.com/models/191aa579c1f4431eb6bbd2c880c99ae9/embed?autostart=1&ui_theme=dark&dnt=1"></iframe>
+                </div>
+                <h3>像素風格</h3>
+                <p>不喜歡3D寵物嗎?我們也提供不同的風格，讓你的寵物更具個性。</p>
+            </div>
+            <div class="card">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="Audrey and Orff" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="250" height="250" src="https://sketchfab.com/models/e6c98cc27a4e46b89c269a899faae522/embed?autostart=1&ui_theme=dark&dnt=1"></iframe>
+                </div>
+                <h3>奇幻風格</h3>
+                <p>嘗試獨特的奇幻風格，展現你寵物的無窮創意。</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 PetTopia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

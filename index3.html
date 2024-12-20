@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetTopia - 認識我們</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f4f0; /* 統一米色背景 */
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ff6f61; /* 桃紅色背景 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 1px;
+            text-decoration: none; /* 去除底線 */
+        }
+
+        header nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffcccb; /* 鼠標懸停改為淺粉色 */
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            padding: 40px 20px; /* 調整上下padding */
+            background-color: #ffcccb; /* 淺粉色背景 */
+            color: #333;
+            flex: 1; /* 填滿剩餘空間 */
+            justify-content: center; /* 垂直居中 */
+            align-items: center; /* 水平居中 */
+            text-align: left; /* 文字靠左 */
+        }
+
+        .hero img {
+            width: 300px; /* 設置圖片寬度為 300px */
+            height: 300px; /* 設置圖片高度為 300px */
+            object-fit: cover; /* 確保圖片不失真 */
+            border-radius: 10px;
+            margin-right: 20px; /* 讓圖片和文字之間的間距更小 */
+        }
+
+        .hero .text {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #2e7d32; /* 綠色標題 */
+            text-transform: uppercase;
+        }
+
+        .hero h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61; /* 桃紅色背景 */
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">PetTopia 寵物養成計劃</a> <!-- 連結到首頁 -->
+        <nav>
+            <a href="index.html#about">認識我們</a>
+            <a href="index.html#features">產品特色</a>
+            <a href="index2.html#customization">個性化設計</a> <!-- 連結到個性化設計 -->
+            <a href="#contact">聯絡我們</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="https://cdn.discordapp.com/attachments/881023379442909204/1319721958199525501/animal-1134504_1920.png?ex=6766fe5a&is=6765acda&hm=938909c0744aba1d0fb53bc35d0b21faead8c6581be85c2ef34da8b6f469447d&" alt="PetTopia Image"> <!-- 替換為你的圖片 -->
+        <div class="text">
+            <h1>認識我們</h1>
+            <h2>品牌理念</h2>
+            <p>符合現代人繁忙中想養寵物的需求，以虛擬寵物獲得療育與慰藉。</p>
+            <h2>品牌風格</h2>
+            <p>可愛 像素 奇幻。</p>
+            <h2>品牌理念</h2>
+            <p>PetTopia 提供全方位的寵物養成計劃，無論是個性化設計還是生活品質提升，均為您和您的寵物量身打造。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 PetTopia. All rights reserved.</p>
+    </footer>
+</body>
+</html>
